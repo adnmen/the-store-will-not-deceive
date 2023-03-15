@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертор веса и цены</title>
+    <link rel="stylesheet" href="page/index.css">
+
+    <!-- <style>
+      span {
+      color: Green;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Title of your Converter -->
+    <h1 style = "color: Green;" >Конвертор веса и цены</h1>
+    <p>Введите значения для наглядной конвертации:</p>
+    <p>
+      <!-- label the input field -->
+      <label>Kilograms</label>
+
+      <input id = "inputKilograms"
+        type = "number"
+        placeholder = "inputKilograms"
+        oninput="weightConverter(this.id,this.value)" 
+        onchange="weightConverter(this.id,this.value)"
+      />
+    </p>
+    <p>
+      <label>Figograms</label>
+      <input id = "inputFigograms"
+        type = "number"
+        placeholder = "inputFigograms"
+        oninput="weightConverter(this.id,this.value)" 
+        onchange="weightConverter(this.id,this.value)"
+      />
+    </p>
+    <!-- output field-->
+    <p>Pounds: <span id = "Pounds"></span></p>
+    <p>Ounces: <span id = "Ounces"></span></p>
+    <p>Grams: <span id = "Grams"></span></p>
+    <p>Stones: <span id = "Stones"></span></p>
+    <!-- <script >
+    //function that evaluates the weight and return result
+    function kiloweightConvert(value) {
+    document.getElementById("Pounds").innerHTML = value * 2.2046;
+    document.getElementById("Ounces").innerHTML = value * 35.274;
+    document.getElementById("Grams").innerHTML = value * 1000; 
+    document.getElementById("Stones").innerHTML = value * 0.1574;
+    }
+    </script> -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
+
+<!-- <h1>Как сделать - Конвертер веса</h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="howto_google_fonts.php">&#10094; Назад</a>
+<a class="w3-right w3-btn" href="howto_js_temperature_converter.php">Дальше &#10095;</a>
+</div>
+<hr>
+<p class="intro">Узнайте, как создать Конвертер веса с помощью HTML и JavaScript.</p>
+<hr>
+<div class="w3-container w3-green">
+<h2>Вес конвертер</h2>
+</div>
+<div class="w3-row-padding" style="margin:0 -16px">
+<p style="margin-left:8px;margin-bottom:4px">Введите значение в любое из полей для преобразования между измерениями веса:</p>
+<div class="w3-half w3-margin-top">
+<label>Pounds</label>
+<input 
+id="inputPounds" 
+class="w3-input w3-border" 
+type="number" 
+placeholder="Pounds" 
+oninput="weightConverter(this.id,this.value)" 
+onchange="weightConverter(this.id,this.value)">
+</div>
+<div class="w3-half w3-margin-top">
+<label>Kilograms</label>
+<input id="inputKilograms" class="w3-input w3-border" type="number" placeholder="Kilograms" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+</div>
+<div class="w3-half w3-margin-top">
+<label>Ounces</label>
+<input id="inputOunces" class="w3-input w3-border" type="number" placeholder="Ounces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+</div>
+<div class="w3-half w3-margin-top">
+<label>Grams</label>
+<input id="inputGrams" class="w3-input w3-border" type="number" placeholder="Grams" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+</div>
+<div class="w3-half w3-margin-top">
+<label>Stones</label>
+<input id="inputStones" class="w3-input w3-border" type="number" placeholder="Stones" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+</div>
+</div> -->
